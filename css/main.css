@@ -2,17 +2,21 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
+
+
  html, 
  body {
  	background-color: black;
  }
 
  .container {
-	background-color: white;
 	min-width: 1200px;
 	height: 500px;
 	margin-top: 110px;
 	padding-left: 100px;
+	background-image: url("../images/Guile_Stage.jpg");
+	background-size: 1650px;
+	background-position: -20px 100%;
  }
 
  .ryu-ready,
