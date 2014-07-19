@@ -7,7 +7,16 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<ul id="overlay">
+		<li id="logo"></li>
+		<li><h1>Click to Play!</h1></li>
+	</ul>
 	<div class="container">
+	<ul class="instructions">
+		<li>Hover over Ryu to get him ready!</li>
+		<li>Click on Ryu to throw a Hodouken!</li>
+		<li>Press and hold "X" to hear a true fighters theme song!</li>
+	</ul>
 		<div class="ryu">
 			<div class="ryu-still ryu-action"></div>
 			<div class="ryu-ready ryu-action"></div>
@@ -16,8 +25,10 @@
 		</div>
 		<div class="hadouken"></div>
 	</div>
+		<div id="instructions_toggle">Toggle Instructions</div>
 	<audio id="hadouken-sound" src="sound/hadouken.mp3">
 	<audio id="groove" src="sound/guile_stage.mp3">
+	<audio id="start_sound" src="sound/start_sound.mp3">
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="js/min/app-ck.js"></script>
 </body>
