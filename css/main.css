@@ -1,16 +1,18 @@
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
-
-
  html, 
  body {
  	background-color: black;
+ 	font-family: 'Montserrat', sans-serif;
  }
 
  .container {
-	min-width: 1200px;
+	width: 100%;
 	height: 500px;
 	margin-top: 110px;
 	padding-left: 100px;
@@ -26,12 +28,15 @@
 	
 	width: 659px;
 	height: 494px;
+	z-index: 9999;
 
  } 
 
 
 .ryu {
   float: left;
+  z-index: 9999;
+
 }
 
 
@@ -75,8 +80,84 @@
 .ryu-throwing,
 .ryu-cool {
   background-repeat: no-repeat;
+  z-index: 9999;
 }
 
+#overlay {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align:center;
+  cursor: pointer;
+}
+
+#logo {
+	background: url("../images/street_fighter_logo.png") no-repeat center center;
+	display: inline-block;
+	background-size: 100%;
+	width: 500px;
+	height: 290px;
+}
+
+
+#overlay li h1 {
+	color: white;
+	font-size: 30px;
+	font-weight: medium;
+	font-style: italic;
+	letter-spacing: 4px;
+	width: 600px;
+	margin: 30px auto;
+}
+
+#overlay li:nth-child(1) {
+	margin-top: 125px;
+}
+
+
+.instructions {
+	margin-top: 120px;
+	font-size: 20px;
+	display: block;
+	width: 400px;
+	position: absolute;
+	float: right;
+	right: 0px;
+	text-align: center;
+	color: black;
+	display: none;
+	z-index: 1;
+}
+
+.instructions li {
+	display: block;
+	margin-top: 20px;
+	background: rgba(250, 250 , 250, 1);
+	padding: 10px 10px;
+	line-height: 25px;
+
+}
+
+#instructions_toggle {
+	text-align: center;
+	width: 200px;
+	padding: 8px;
+	background: white;
+	color: black;
+	display: none;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	cursor: pointer;
+	position: absolute;
+	right: 95px;
+}
+
+.hide {
+	display: none;
+}
 
 
 
