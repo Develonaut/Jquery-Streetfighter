@@ -18,10 +18,15 @@ function playStartSound() {
   $("#hadouken-sound")[0].play();
   }
 
-  function playGroove() {
-    $("#groove")[0].volume = 0.5;
-    $("#groove")[0].play();
+ var grooveSound = false;
+function playGroove () {
+  grooveSound = !grooveSound;
+  if (grooveSound) {
+    $('#groove')[0].pause();
+    // $('#cool')[0].load()
+    $('#groove')[0].play();
   }
+}
 
   $('.ryu').mouseenter(function() {
     $ryu_actions.hide();
