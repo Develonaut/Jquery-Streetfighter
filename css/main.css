@@ -2,10 +2,6 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
-* {
-  outline: red 1px solid;
-}
-
  html, 
  body {
  	background-color: black;
@@ -39,7 +35,7 @@
   background-image: url('../images/hadouken.gif');
   width: 156px; 
   height: 90px;
-/*  display: none;*/
+  display: none;
   float: left;
   position: relative;
   top: 167px;
