@@ -6,9 +6,15 @@ var $hadouken = $(".hadouken");
 var $cool = $(".ryu-cool");
 var $ryu_actions = $(".ryu-action");
 
+	 
+function playStartSound() {
+	$("#start_sound")[0].volume = 1;
+	$("#start_sound")[0].play();
+}
+
  function playHadouken() {
   $("#hadouken-sound")[0].volume = 0.5;
-  $("#hadouken-sound")[0].load();
+  $('#hadouken-sound')[0].load();
   $("#hadouken-sound")[0].play();
   }
 
@@ -17,6 +23,18 @@ var $ryu_actions = $(".ryu-action");
     $('#groove')[0].play();
   }
 
+
+	$("#overlay").on("click", function() {
+	 	$(this).hide();
+	 	playStartSound();
+	 	$(".instructions").show();
+	 	$("#instructions_toggle").show();
+	 });
+
+
+	$("#instructions_toggle").on("click", function() {
+		$(".instructions").toggle();
+	});
 
 
   $('.ryu').mouseenter(function() {
