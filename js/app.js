@@ -20,24 +20,8 @@ function playStartSound() {
 
   function playGroove() {
     $("#groove")[0].volume = 0.5;
-    $('#hadouken-sound')[0].load();
-    $('#groove')[0].play();
-    alert("I'm playing!");
+    $("#groove")[0].play();
   }
-
-
-	$("#overlay").on("click", function() {
-	 	$(this).hide();
-	 	playStartSound();
-	 	$(".instructions").show();
-	 	$("#instructions_toggle").show();
-	 });
-
-
-	$("#instructions_toggle").on("click", function() {
-		$(".instructions").toggle();
-	});
-
 
   $('.ryu').mouseenter(function() {
     $ryu_actions.hide();
@@ -88,4 +72,17 @@ function playStartSound() {
   		}
   });
 
+
+
+	$("#overlay").on("click", function() {
+	 	$(this).hide();
+	 	playStartSound();
+	 	$(".instructions").show();
+	 	$("#instructions_toggle").show();
+	 });
+
+
+	$("#instructions_toggle").on("click", function() {
+		$(".instructions").toggle();
+	});
 
