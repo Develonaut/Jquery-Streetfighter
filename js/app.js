@@ -23,7 +23,8 @@ function playGroove () {
   grooveSound = !grooveSound;
   if (grooveSound) {
     $('#groove')[0].pause();
-    // $('#cool')[0].load()
+     $("#groove")[0].volume = 0.5;
+    // $('#groove')[0].load()
     $('#groove')[0].play();
   }
 }
