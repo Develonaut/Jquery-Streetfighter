@@ -20,6 +20,7 @@ function playStartSound() {
 
   function playGroove() {
     $("#groove")[0].volume = 0.5;
+    $('#hadouken-sound')[0].load();
     $('#groove')[0].play();
   }
 
