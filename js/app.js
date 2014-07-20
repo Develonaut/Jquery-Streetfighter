@@ -32,6 +32,7 @@ function playStartSound() {
 
 // Play groove sound
 function playGroove () {
+    $('#hadouken-sound')[0].pause();
     $('#intro_sound')[0].pause();
     $("#groove")[0].volume = 0.5;
     $('#groove')[0].play();
@@ -136,9 +137,6 @@ $("#instructions_toggle").on("click", function() {
   				$ryu_actions.hide();
   				// Show cool Ryu
   				$cool.show();
- 				// If intro song is still playing when "X" is pressed pause the intro music
-  				$("#intro_sound")[0].pause();
-  				$("#intro_sound")[0].load();
   				// Play groove sound
   				playGroove();
   			}
