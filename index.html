@@ -12,10 +12,15 @@
 		<li><h1>Click to Play!</h1></li>
 	</ul>
 	<div class="container">
+	<ul id="intro">
+		<li id="streetLogo"></li>
+		<li id="madeWith"><p>Made With</p></li>
+		<li id="jqueryLogo"></li>
+	</ul>
 	<ul class="instructions">
-		<li>Hover over Ryu to get him ready!</li>
-		<li>Click on Ryu to throw a Hodouken!</li>
-		<li>Press and hold "X" to hear a true fighters theme song!</li>
+		<li><p>Hover over Ryu to get him ready!</p></li>
+		<li><p>Click on Ryu to throw a Hodouken!</p></li>
+		<li><p>Press and hold "X" to hear a true fighters theme song!</p></li>
 	</ul>
 		<div class="ryu">
 			<div class="ryu-still ryu-action"></div>
@@ -25,11 +30,12 @@
 		</div>
 		<div class="hadouken"></div>
 	</div>
-		<div id="instructions_toggle">Toggle Instructions</div>
+		<button id="instructions_toggle"><p>Toggle Instructions</p></button>
 	<audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
 	<audio id="groove" src="sound/guile_stage.mp3"></audio>
 	<audio id="start_sound" src="sound/start_sound.mp3"></audio>
+	<audio id="intro_sound" src="sound/street-fighter-theme.mp3"></audio>
 <script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="js/min/app-ck.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
