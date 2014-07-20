@@ -32,7 +32,7 @@ function playStartSound() {
 
 // Play groove sound
 function playGroove () {
-    $('#groove')[0].pause();
+    $('#intro_sound')[0].pause();
     $("#groove")[0].volume = 0.5;
     $('#groove')[0].play();
 }
