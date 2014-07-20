@@ -36,16 +36,10 @@ function playGroove () {
     $('#groove')[0].play();
 }
 
-
-//********** OVERLAY START SCREEN *************//
-
-$("#overlay").on("click", function() {
- 	$(this).hide();
- 	playStartSound();
- 	playIntroSound();
-	$(".instructions").hide();
-	$("#instructions_toggle").hide();
-	$streetLogo.fadeIn(3500, function() {
+// Starts the intro animations and intro sound
+function beginIntro() {
+		playIntroSound(); 
+		$streetLogo.fadeIn(2500, function() {
 		$streetLogo.fadeOut(1000);
 		$madeWith.fadeIn(3000, function() {
 			$madeWith.fadeOut(1000);
@@ -56,7 +50,19 @@ $("#overlay").on("click", function() {
 			});
 		});
 	});
+}
+
+
+//********** OVERLAY START SCREEN  *************//
+
+$("#overlay").on("click", function() {
+ 	$(this).hide();
+ 	playStartSound();
+ 	beginIntro();
+	$(".instructions").hide();
+	$("#instructions_toggle").hide();
 });
+
 
 
 
