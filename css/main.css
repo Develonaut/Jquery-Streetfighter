@@ -112,12 +112,13 @@
 
 #overlay li h1 {
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: medium;
 	font-style: italic;
 	letter-spacing: 4px;
 	width: 600px;
-	margin: 30px auto;
+	margin: 10px auto;
+	color: #fbbc12;
 }
 
 #overlay li:nth-child(1) {
@@ -181,7 +182,7 @@
 	position: absolute;
 	width: 600px;
 	height: 300px;
-	margin-top: 90px;
+	margin-top: 50px;
 	z-index: 1;
 	list-style: none;
 	text-align: center;
