@@ -45,11 +45,11 @@ $("#overlay").on("click", function() {
  	playIntroSound();
 	$(".instructions").hide();
 	$("#instructions_toggle").hide();
-	$streetLogo.fadeIn(2500, function() {
+	$streetLogo.fadeIn(3500, function() {
 		$streetLogo.fadeOut(1000);
-		$madeWith.fadeIn(2500, function() {
+		$madeWith.fadeIn(3000, function() {
 			$madeWith.fadeOut(1000);
-			$jqueryLogo.fadeIn(2500, function() {
+			$jqueryLogo.fadeIn(3000, function() {
 				$jqueryLogo.fadeOut(1000);
 				$(".instructions").fadeIn(1000);
 				$("#instructions_toggle").fadeIn(1000);
